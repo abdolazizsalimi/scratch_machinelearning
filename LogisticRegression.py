@@ -3,11 +3,6 @@ import numpy as np
 def sigmoid(x):
     return 1/(1+np.exp(-x))
 
-
-
-
-
-
 class LogisticRegression():
     def __init__(self , learning_rate = 0.001 , n_iters = 1000):
         self.lr = learning_rate 
@@ -36,3 +31,4 @@ class LogisticRegression():
         y_pred = sigmoid(liner_prediction)
         class_predictions = [0 if y<=.5 else 1 for  y in y_pred]
         return class_predictions
+
