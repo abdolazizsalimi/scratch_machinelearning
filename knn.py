@@ -10,5 +10,5 @@ class KNN:
         pass
 
     def predict(self, X):
-        self.x = x 
+        self.x = X
         pass
