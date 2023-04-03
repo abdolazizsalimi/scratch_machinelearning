@@ -8,7 +8,7 @@ class PCA:
     
 
     def fit(self , X):
-        
+
         self.mean = np.mean(X , axis=0 )
         X = X - self.mean
         cov = np.cov(X.T)
